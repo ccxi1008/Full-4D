@@ -6,13 +6,16 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
+  <meta name="title" content="Full-4D: Generating Full-Scope 4D Scene from a Single-View Video">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <meta name="description" content="Generating 4D scenes from a single-view video is inherently ill-posed: a single viewpoint lacks the information needed to recover a complete, dynamic scene with full coverage. Existing methods are typically limited to monocular videos, simple 3D effects, or only small viewpoint perturbations around the original viewpoint, falling short of true 4D generation. 
+Meanwhile, the lack of large-scale datasets capturing full-scope 4D scenes with synchronized multi-view videos further hinders progress in this direction.
+We propose a novel single-view video-to-4D framework that casts full-scope 4D generation as a multi-view video synthesis followed by optimization-based 4D reconstruction from the generated views. To instantiate this formulation end-to-end, we make three key contributions.
+First, we introduce Real-MV-4D, a large-scale dataset of synchronized multi-view videos captured in diverse real-world environments to provide the 4D supervision. Second, we train a multi-view video diffusion model, incorporating spatial-aware projection guidance and a fused time(T)-view(V) attention mechanism to generate a synchronized T$\times$V video grid with strict alignment. Third, we lift the synthesized multi-view videos into an explicit 4D representation (i.e. 4DGS), regularized by a Flow Matching Distillation loss that exploits the multi-view prior to improve novel-view rendering. Extensive experiments demonstrate that our method outperforms existing approaches in both visual fidelity and geometric consistency, enabling full-scope 4D scene generation from single-view videos.">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
+  <meta name="keywords" content="Video-to-4D,Multi-view Generation,Diffusion Model">
   <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="author" content="Tingxi Chen,Ke Hao,Yabo Chen,Zhengxue cheng,Rong Xie,Li Song,Haibin Huang,Chi Zhang,Xuelong Li">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   
@@ -74,11 +77,10 @@
 
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
+  <title>Full-4D - Tingxi Chen, Ke Hao, Yabo Chen, et al.</title>
   
   <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
   
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -114,52 +116,20 @@
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "headline": "你的论文标题",
     "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
+      {"@type": "Person", "name": "Tingxi Chen", "affiliation": {"@type": "Organization", "name": "Shanghai Jiao Tong University"}},
+      {"@type": "Person", "name": "Ke Hao", "affiliation": {"@type": "Organization", "name": "Shanghai Jiao Tong University"}},
+      {"@type": "Person", "name": "Yabo Chen", "affiliation": {"@type": "Organization", "name": "Institute of Artificial Intelligence, China Telecom (TeleAI)"}},
+      {"@type": "Person", "name": "Zhengxue Cheng", "affiliation": {"@type": "Organization", "name": "Shanghai Jiao Tong University"}},
+      {"@type": "Person", "name": "Rong Xie", "affiliation": {"@type": "Organization", "name": "Shanghai Jiao Tong University"}},
+      {"@type": "Person", "name": "Song Li", "affiliation": {"@type": "Organization", "name": "Shanghai Jiao Tong University"}},
+      {"@type": "Person", "name": "Haibin Huang", "affiliation": {"@type": "Organization", "name": "Institute of Artificial Intelligence, China Telecom (TeleAI)"}},
+      {"@type": "Person", "name": "Chi Zhang", "affiliation": {"@type": "Organization", "name": "Institute of Artificial Intelligence, China Telecom (TeleAI)"}},
+      {"@type": "Person", "name": "Xuelong Li", "affiliation": {"@type": "Organization", "name": "Institute of Artificial Intelligence, China Telecom (TeleAI)"}}
     ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
+    "datePublished": "2024",
+    "publisher": {"@type": "Organization", "name": "CVPR"}
   }
   </script>
   
@@ -168,15 +138,9 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
+    "name": "Shanghai Jiao Tong University & TeleAI"
   }
-  </script>
+</script>
 </head>
 <body>
 
@@ -186,127 +150,74 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
+  
   <main id="main-content">
   <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          
+          <!-- 论文标题 -->
+          <h1 class="title is-1 publication-title">Full-4D: Generating Full-Scope 4D Scene from a Single-View Video</h1>
+          
+          <!-- 作者列表（9人，带标注） -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Tingxi Chen<sup>*1,2</sup>,</span>
+            <span class="author-block">Ke Hao<sup>*1,2</sup>,</span>
+            <span class="author-block">Yabo Chen<sup>†2</sup>,</span>
+            <span class="author-block">Zhengxue Cheng<sup>1</sup>,</span>
+            <span class="author-block">Rong Xie<sup>1</sup>,</span>
+            <span class="author-block">Song Li<sup>✉1</sup>,</span>
+            <span class="author-block">Haibin Huang<sup>2</sup>,</span>
+            <span class="author-block">Chi Zhang<sup>2</sup>,</span>
+            <span class="author-block">Xuelong Li<sup>✉2</sup></span>
+          </div>
+
+          <!-- 机构信息 -->
+          <div class="is-size-5 publication-authors" style="margin-top: 0.5rem;">
+            <span class="author-block">
+              <sup>1</sup>Shanghai Jiao Tong University, 
+              <sup>2</sup>Institute of Artificial Intelligence, China Telecom (TeleAI)
+            </span>
+          </div>
+          
+          <!-- 贡献说明 -->
+          <div class="is-size-6" style="margin-top: 0.3rem;">
+            <span class="eql-cntrb">
+              <sup>*</sup>Equal Contributions, <sup>†</sup>Project Leader, <sup>✉</sup>Corresponding Author
+            </span>
+          </div>
+
+          <!-- 按钮：只保留 arXiv 和 Project Page -->
           <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
+            <div class="publication-links">
+              
+              <!-- arXiv 按钮 -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/你的arxivID" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
                 </a>
               </span>
+
+              <!-- Project Page 按钮（原 Code 按钮修改） -->
+              <span class="link-block">
+                <a href="https://你的项目页网址.com" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-globe"></i>  <!-- 地球图标代表网页 -->
+                  </span>
+                  <span>Project Page</span>
+                </a>
+              </span>
+
             </div>
           </div>
+          
         </div>
       </div>
     </div>
@@ -314,23 +225,25 @@
 </section>
 
 
-<!-- Teaser video-->
+<!-- Teaser Image（替换原来的视频）-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      
+      <!-- 静态图片替换视频 -->
+      <img src="static/images/teaser.jpg" 
+           alt="Full-4D Teaser Image" 
+           style="width: 100%; height: auto; display: block; margin: 0 auto;"
+           loading="lazy">
+      
+      <!-- 图片说明 -->
+      <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
+        Given a single-view input video, our Full-4D generates a synchronized multi-view 4D video grid over large angular ranges and lifts into 4D scene representation. The rendered results demonstrate strong generalization across diverse scenes and styles.
       </h2>
+      
     </div>
   </div>
 </section>
-<!-- End teaser video -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -341,7 +254,10 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Generating 4D scenes from a single-view video is inherently ill-posed: a single viewpoint lacks the information needed to recover a complete, dynamic scene with full coverage. Existing methods are typically limited to monocular videos, simple 3D effects, or only small viewpoint perturbations around the original viewpoint, falling short of true 4D generation. 
+            Meanwhile, the lack of large-scale datasets capturing full-scope 4D scenes with synchronized multi-view videos further hinders progress in this direction.
+            We propose a novel single-view video-to-4D framework that casts full-scope 4D generation as a multi-view video synthesis followed by optimization-based 4D reconstruction from the generated views. To instantiate this formulation end-to-end, we make three key contributions.
+            First, we introduce Real-MV-4D, a large-scale dataset of synchronized multi-view videos captured in diverse real-world environments to provide the 4D supervision. Second, we train a multi-view video diffusion model, incorporating spatial-aware projection guidance and a fused time(T)-view(V) attention mechanism to generate a synchronized T×V video grid with strict alignment. Third, we lift the synthesized multi-view videos into an explicit 4D representation (i.e. 4DGS), regularized by a Flow Matching Distillation loss that exploits the multi-view prior to improve novel-view rendering. Extensive experiments demonstrate that our method outperforms existing approaches in both visual fidelity and geometric consistency, enabling full-scope 4D scene generation from single-view videos.
           </p>
         </div>
       </div>
@@ -350,96 +266,67 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
+<!-- Single Video Section -->
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Generated 4D Scenes</h2>
+      
+      <!-- 单视频容器 -->
+      <div class="single-video-container" style="max-width: 100%; margin: 0 auto;">
+        <video id="baseline-video" 
+               controls 
+               muted 
+               loop 
+               playsinline
+               style="width: 100%; height: auto; display: block; border-radius: 8px;"
+               >
+          <source src="static/videos/4D.mp4" type="video/mp4">
+        </video>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
+      
+      <!-- 视频说明 -->
+      <!-- <p class="has-text-centered" style="margin-top: 1rem; color: #666;">
+        Comparison with state-of-the-art baselines on dynamic scene generation.
+      </p> -->
+      
     </div>
   </div>
 </section>
-<!-- End youtube video -->
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <h2 class="title is-3">Baselines Comparison</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
             <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
+            <source src="static/videos/compare1.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
             <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
+            <source src="static/videos/compare2.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
             <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
+            <source src="static/videos/compare3.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video4">
+          <!-- TODO: Add poster image for better preview -->
+          <video poster="" id="video4" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static/videos/compare4.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -449,66 +336,45 @@
 <!-- End video carousel -->
 
 
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- Single Video Section -->
+<section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">More Results</h2>
+      
+      <!-- 单视频容器 -->
+      <div class="single-video-container" style="max-width: 100%; margin: 0 auto;">
+        <video id="baseline-video" 
+               controls 
+               muted 
+               loop 
+               playsinline
+               style="width: 100%; height: auto; display: block; border-radius: 8px;"
+               >
+          <source src="static/videos/more.mp4" type="video/mp4">
+        </video>
       </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
-}</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
+      
+      <!-- 视频说明 -->
+      <!-- <p class="has-text-centered" style="margin-top: 1rem; color: #666;">
+        Comparison with state-of-the-art baselines on dynamic scene generation.
+      </p> -->
+      
     </div>
   </div>
-</footer>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Statcounter tracking code -->
   
