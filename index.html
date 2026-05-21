@@ -256,30 +256,48 @@ First, we introduce Real-MV-4D, a large-scale dataset of synchronized multi-view
 </section>
 <!-- End paper abstract -->
 
-<!-- Single Video Section -->
-<section class="hero is-small">
+<!-- Generated 4D Scenes 视频轮播部分 -->
+<section class="hero is-small ">
   <div class="hero-body">
-    <div class="container is-max-desktop">
+    <div class="container">
       <h2 class="title is-3 has-text-centered">Generated 4D Scenes</h2>
-      
-      <!-- 单视频容器 -->
-      <div class="single-video-container" style="max-width: 100%; margin: 0 auto;">
-        <video id="baseline-video" 
-               controls 
-               muted 
-               loop 
-               playsinline
-               style="width: 100%; height: auto; display: block; border-radius: 8px;"
-               >
-          <source src="static/videos/4D.mp4" type="video/mp4">
-        </video>
+      <div id="generated-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="gen-video1" controls muted loop playsinline height="100%" preload="metadata">
+            <source src="static/videos/classrooom.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="gen-video2" controls muted loop playsinline height="100%" preload="metadata">
+            <source src="static/videos/rabbit" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="gen-video3" controls muted loop playsinline height="100%" preload="metadata">
+            <source src="static/videos/upscaled-video4.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video4">
+          <video poster="" id="gen-video4" controls muted loop playsinline height="100%" preload="metadata">
+            <source src="static/videos/upscaled-video.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video5">
+          <video poster="" id="gen-video5" controls muted loop playsinline height="100%" preload="metadata">
+            <source src="static/videos/upscaled-video2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video6">
+          <video poster="" id="gen-video6" controls muted loop playsinline height="100%" preload="metadata">
+            <source src="static/videos/upscaled-video3.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video7">
+          <video poster="" id="gen-video7" controls muted loop playsinline height="100%" preload="metadata">
+            <source src="static/videos/upscaled-video5.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
-      
-      <!-- 视频说明 -->
-      <!-- <p class="has-text-centered" style="margin-top: 1rem; color: #666;">
-        Comparison with state-of-the-art baselines on dynamic scene generation.
-      </p> -->
-      
     </div>
   </div>
 </section>
